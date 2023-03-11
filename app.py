@@ -1,4 +1,5 @@
 from flask import Flask, request
+from flask_cors import CORS
 
 from NsLookup import nslookup
 from Whois import who_is
@@ -8,6 +9,7 @@ from Wappy import wapp
 from Hunterio import hunter
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/')
 def index():
