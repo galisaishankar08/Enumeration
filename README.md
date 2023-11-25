@@ -15,3 +15,7 @@ python -m venv env
 ```
 pip install -r requirements.txt
 ```
+* Run Application
+```
+python app.py
+```
